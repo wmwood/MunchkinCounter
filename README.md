@@ -1,4 +1,4 @@
-MunchkinCounter
+Munchkin Counter
 ===============
 
 A counter for the board game Munchkin.
