@@ -1,0 +1,54 @@
+// main: _style.less
+
+@font-face {
+	font-family: 'Quasimodo';
+	src: url('../fonts/quasimodo.ttf');
+}
+
+* {
+	-webkit-text-size-adjust: none;
+	font-family: "Quasimodo", sans-serif;
+	font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #FFD09A;
+	color: @BaseColor;
+
+}
+
+a {
+	cursor:pointer;
+}
+
+input[type='text'] {
+	.LineHeightFix;
+	box-sizing: border-box;
+	font-size: 20px;
+	padding: 15px 15px 10px;
+	width: 100%;
+	border: 1px solid #D1D1D1;
+	border-radius: 10px;
+}
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: " "
+}
+
+.clearfix:after {
+	clear:both
+}
+
+.push-left {
+	float:left;
+}
+
+.push-right {
+	float:right;
+}

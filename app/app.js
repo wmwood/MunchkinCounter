@@ -1,0 +1,1 @@
+var munchkinCounter = angular.module("munchkinCounter", ["ngRoute", "ngTouch"]);

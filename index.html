@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html data-ng-app="munchkinCounter" data-ng-controller="mainController as vm" manifest="app.manifest">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title data-ng-bind="vm.Title"></title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/angular-csp.css" rel="stylesheet" type="text/css" />
+
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-icon-precomposed" href="images/logo.jpg">
+	<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="images/loading.jpg">
+</head>
+
+<body>
+	<div data-title-bar="{{ vm.Title }}"></div>
+
+	<div class="container">
+		<div class="content" data-ng-view=""></div>
+	</div>
+
+	<div data-footer-bar=""></div>
+
+	<div class="orientation-alert"></div>
+	<div class="orientation-fade"></div>
+
+	<!-- Dependencies -->
+	<script type="text/javascript" src="app/_dependencies/angular.min.js"></script>
+	<script type="text/javascript" src="app/_dependencies/angular-route.min.js"></script>
+	<script type="text/javascript" src="app/_dependencies/angular-touch.min.js"></script>
+
+	<!-- App -->
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/app-config.js"></script>
+
+	<!-- Directives -->
+	<script type="text/javascript" src="app/directives/title-bar/title-bar.js"></script>
+	<script type="text/javascript" src="app/directives/footer-bar/footer-bar.js"></script>
+
+	<!-- Filters -->
+	<script type="text/javascript" src="app/filters/positive-negative.js"></script>
+
+	<!-- Main Screen -->
+	<script type="text/javascript" src="app/controllers/main-controller.js"></script>
+
+	<!-- Character View -->
+	<script type="text/javascript" src="app/controllers/character-controller.js"></script>
+	<script type="text/javascript" src="app/services/character-service.js"></script>
+	<script type="text/javascript" src="app/repositories/character-repository.js"></script>
+
+	<!-- Battle View -->
+	<script type="text/javascript" src="app/controllers/battle-controller.js"></script>
+	<script type="text/javascript" src="app/services/battle-service.js"></script>
+	<script type="text/javascript" src="app/repositories/battle-repository.js"></script>
+</body>
+
+</html>

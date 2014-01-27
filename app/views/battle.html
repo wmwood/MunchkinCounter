@@ -1,0 +1,28 @@
+<div class="counters">
+	<div class="counter push-left">
+		<h2>Monster Level</h2>
+		<a data-ng-click="vm.LevelUp()">
+			<img src="images/go-up.svg" alt="Level up" />
+		</a>
+		<h1>{{ vm.GetLevel() }}</h1>
+		<a data-ng-click="vm.LevelDown()">
+			<img src="images/go-down.svg" alt="Level down" />
+		</a>
+	</div>
+	<div class="counter push-right">
+		<h2 class="mobile-heading-push">Modifier</h2>
+		<a data-ng-click="vm.ModifierUp()">
+			<img src="images/go-up.svg" alt="Gear up" />
+		</a>
+		<h1>{{ vm.GetModifier() }}</h1>
+		<a data-ng-click="vm.ModifierDown()">
+			<img src="images/go-down.svg" alt="Gear down" />
+		</a>
+	</div>
+
+	<div class="clearfix">
+		<h2>Power Difference</h2>
+		<h1>{{ vm.GetPowerDifference() | positiveNegative }}</h1>
+		<span>{{ vm.GetMessage() }}</span>
+	</div>
+</div>

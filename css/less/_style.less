@@ -1,0 +1,65 @@
+// out: ../style.css
+
+@BaseColor: #824d25;
+@BarHeight: 60px;
+
+.LineHeightFix{
+    line-height: 1.28;
+}
+
+@import "globals.less";
+@import "header-footer.less";
+
+.container {
+	margin: 0 auto;
+	overflow: auto;
+	padding: (@BarHeight + 20) 15px @BarHeight;
+}
+
+.character-info {
+	margin-bottom: 15px;
+}
+
+.counters {
+	text-align: center;
+	
+	img {
+		width: 40%;
+		max-width: 165px;
+	}
+	
+	h1,
+	h2 {
+		text-align: center;
+		font-weight: normal;
+		margin: 0;
+	}
+	
+	h1 {
+		.LineHeightFix;
+		font-size: 72px;
+		height: 72px;
+	}
+	
+	h2 {
+		font-size: 22px;
+	}
+	
+	span {
+		display:block;
+		.LineHeightFix;
+		margin-top: 10px;
+		font-size: 36px;
+		height: 36px;
+	}
+	
+	.counter {
+				width: 49%;
+	}
+}
+
+@media(max-width : 385px) {
+	.mobile-heading-push {
+		height:  40px;
+	}
+}
