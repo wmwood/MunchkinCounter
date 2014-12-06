@@ -42,7 +42,7 @@
 			if(GetPowerDifference() >0)
 				message = "You Win";
 			else
-				message = "You Loose";
+				message = "You Lose";
 			
 			return message;
 		}
